@@ -24,7 +24,7 @@ public class PortfoliofinalApplication {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
 
-				registry.addMapping("/**").allowedOrigins("https://portfolio-peiffer.web.app/portfolio");
+				registry.addMapping("/**").allowedOrigins("");
 			}
 		};
 	}
