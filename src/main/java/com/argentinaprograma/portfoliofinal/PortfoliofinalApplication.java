@@ -24,7 +24,7 @@ public class PortfoliofinalApplication {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
 
-				registry.addMapping("/**").allowedOrigins("");
+				registry.addMapping("/**").allowedOrigins("https://portfolio-peiffer.web.app/portfolio");
 			}
 		};
 	}
@@ -32,7 +32,7 @@ public class PortfoliofinalApplication {
 	public CorsFilter corsFilter() {
 		CorsConfiguration corsConfiguration = new CorsConfiguration();
 		corsConfiguration.setAllowCredentials(true);
-		corsConfiguration.setAllowedOrigins(Arrays.asList("http://localhost:4200"));
+		corsConfiguration.setAllowedOrigins(Arrays.asList("https://portfolio-peiffer.web.app/portfolio"));
 
 		corsConfiguration.setAllowedHeaders(Arrays.asList("Origin", "Access-Control-Allow-Origin", "Content-Type",
 				"Accept", "Authorization", "Origin, Accept", "X-Requested-With",
